@@ -1,0 +1,96 @@
+.middle {
+    text-align: center;
+}
+
+/* Le background du poème */
+.square {
+  --SquareWidth: 750px;
+  width: var(--SquareWidth);
+  height: 100vw;
+
+  /* Découvert les filtres */
+  background-color: rgba(255, 255, 255, 0.308);
+  background-image: url("https://imgs.search.brave.com/qlJbU_YgEsJaNRP-BNo5HLat4Z2g-MoQRKe4PEYcQts/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YTEuZ2lwaHkuY29t/L21lZGlhL3YxLlky/bGtQVGM1TUdJM05q/RXhkMjFwYnpocU56/TjNiSE42YzJaeGFE/VnBOSFJ4T1hab2Nq/bHRNVzVzWW1oNVlY/VXljbkp3Y3labGNE/MTJNVjluYVdaelgz/TmxZWEpqYUNaamRE/MW4vUGxscHg0NUh2/TVZqVENKOHVYLzIw/MC5naWY.gif");
+  backdrop-filter: blur(10px);
+  left: 50%;
+  transform: translate(-375px,0);
+  z-index: -1;
+  position: absolute;
+  border-radius: 25px;
+}
+
+/* Mon essai d'importer des font custom. J'ai essayer de le mettre en place pour que sa fonctionne sur n'importe quel system */
+@font-face {
+  font-family: 'customFont';
+  src: url("https://raw.githubusercontent.com/cheesymuffin8/Custom-Font-For-Intro-Dev-Web/main/DalekPinpointBold.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "customFont", Arial;
+}
+
+.arial {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* axolotl en vague (j'ai eu de l'aide avec chatgpt ici) */
+
+.wave-text {
+    display: inline;
+    gap: 2px;
+    justify-content: right;
+}
+
+.letter {
+    display: inline-block;
+    font-size: 20px;
+    position: relative;
+    font-family: cursive;
+}
+
+.l1 {
+  top: 4px;
+}
+.l2 {
+  top: 2px;
+}
+.l3 {
+  top: 0px;
+}
+.l4 {
+  top: -2px;
+}
+
+/* Shrek ASCII */
+#shrek {
+    color:rgb(255, 162, 0);
+    background-color: rgba(0, 0, 0, 0.338);
+    background-image: url("https://media1.tenor.com/m/Ol8tbjg8L_YAAAAd/konya.gif");
+    backdrop-filter: sepia(100%);
+    border-radius: 10px;
+    width: 300px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.BINGOS_GOT_PAINUS {
+    transform: translate(-522px, 224px);
+}
+
+#EGG{ 
+  transform: translate(0, -1430px);
+}
+#NOTSCAMMER{  
+  transform: translate(0, -1630px);
+  justify-content: right;
+}
+
+
+/* Background GIF */
+body {
+  background-image: url("https://media.tenor.com/tnphPiAztMIAAAAM/skeleton.gif");
+  background-position: 75px, 0;
+  color: blanchedalmond;
+}
