@@ -1,0 +1,25 @@
+body {
+ background-color: aquamarine;
+}
+
+#SideBar {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    height: 100vh;
+    float: left;
+    background-color: aqua;
+}
+#Info {
+    width: 80%;
+    height: 100vh;
+    float: right;
+    background-color: white;
+}
+
+.absolute {
+    background-color: antiquewhite;
+    position: absolute;
+    padding: 20px;
+    margin: 20px; 
+}
